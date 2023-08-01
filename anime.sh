@@ -14,7 +14,7 @@ yellow() { echo -e "\\033[33;1m${*}\\033[0m"; }
 green() { echo -e "\\033[32;1m${*}\\033[0m"; }
 red() { echo -e "\\033[31;1m${*}\\033[0m"; }
 # domain random
-CDN="https://raw.githubusercontent.com/Bringas-tunnel/v5/main/ssh"
+ANDY="https://raw.githubusercontent.com/Bringas-tunnel/v5/main/ssh"
 cd /root
 if [ "${EUID}" -ne 0 ]; then
 echo "You need to run this script as root"
@@ -133,7 +133,7 @@ echo -e "$green━━━━━━━━━━━━━━━━━━━━━�
 	if test $dns -eq 1; then
     clear
     apt install jq curl -y
-    wget -q -O /root/cf "${CDN}/cf" >/dev/null 2>&1
+    wget -q -O /root/cf "${ANDY}/cf" >/dev/null 2>&1
     chmod +x /root/cf
     bash /root/cf | tee /root/install.log
     print_success "Domain Random Done"
