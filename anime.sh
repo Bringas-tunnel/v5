@@ -106,6 +106,8 @@ echo -e "[ ${green}INFO${NC} ] Preparing the install file"
 apt install git curl -y >/dev/null 2>&1
 apt install python -y >/dev/null 2>&1
 echo -e "[ ${green}INFO${NC} ] Aight good ... installation file is ready"
+echo -e "$green(っ◔◡◔)っ ♥ BRINGAS ♥$NC"
+echo -e "$green♥ TERIMAKSIH TELAH MEMAKAI SCRIPT BRINGAS ♥$NC"
 sleep 2
 echo -ne "[ ${green}INFO${NC} ] Check permission : "
 mkdir -p /var/lib/SIJA >/dev/null 2>&1
