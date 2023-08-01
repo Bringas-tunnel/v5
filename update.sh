@@ -1,5 +1,5 @@
 #wget https://github.com/${GitUser}/
-GitUser="Andyyuda"
+GitUser="Bringas-tunnel"
 if [ "${EUID}" -ne 0 ]; then
 		echo "You need to run this script as root"
 		exit 1
@@ -10,7 +10,7 @@ if [ "$(systemd-detect-virt)" == "openvz" ]; then
 fi
 echo ""
 version=$(cat /home/ver)
-ver=$( curl https://raw.githubusercontent.com/${GitUser}/v4/main/version )
+ver=$( curl https://raw.githubusercontent.com/${GitUser}/v5/main/version )
 clear
 # LINE COLOUR
 line=$(cat /etc/line)
@@ -28,7 +28,7 @@ Info1="${Green_font_prefix}($version)${Font_color_suffix}"
 Info2="${Green_font_prefix}(LATEST VERSION)${Font_color_suffix}"
 Error="Version ${Green_font_prefix}[$ver]${Font_color_suffix} available${Red_font_prefix}[Please Update]${Font_color_suffix}"
 version=$(cat /home/ver)
-new_version=$( curl https://raw.githubusercontent.com/${GitUser}/v4/main/newversion | grep $version )
+new_version=$( curl https://raw.githubusercontent.com/${GitUser}/v5/main/newversion | grep $version )
 #Status Version
 if [ $version = $new_version ]; then
 sts="${Info2}"
@@ -64,7 +64,7 @@ read -p "PPlease Choose 1 or x : " option2
 case $option2 in
 1)
 version=$(cat /home/ver)
-new_version=$( curl https://raw.githubusercontent.com/${GitUser}/v4/main/newversion | grep $version )
+new_version=$( curl https://raw.githubusercontent.com/${GitUser}/v5/main/newversion | grep $version )
 if [ $version = $new_version ]; then
 clear
 echo ""
@@ -92,7 +92,7 @@ sleep 1
 echo ""
 # UPDATE RUN-UPDATE
 cd /usr/bin
-wget -O run-update "https://raw.githubusercontent.com/${GitUser}/v4/main/update.sh"
+wget -O run-update "https://raw.githubusercontent.com/${GitUser}/v5/main/update.sh"
 chmod +x run-update
 # RUN UPDATE
 echo ""
@@ -104,45 +104,45 @@ echo ""
 echo -e "\e[0;32mNew Version Downloading started!\e[0m"
 sleep 2
 cd /usr/bin
-wget -q -O /usr/bin/usernew "https://raw.githubusercontent.com/Andyyuda/v4/main/ssh/usernew.sh"
-wget -q -O /usr/bin/auto-reboot "https://raw.githubusercontent.com/Andyyuda/v4/main/menu/auto-reboot.sh"
-wget -q -O /usr/bin/restart "https://raw.githubusercontent.com/Andyyuda/v4/main/menu/restart.sh"
-wget -q -O /usr/bin/tendang "https://raw.githubusercontent.com/Andyyuda/v4/main/ssh/tendang.sh"
-wget -q -O /usr/bin/clearcache "https://raw.githubusercontent.com/Andyyuda/v4/main/menu/clearcache.sh"
-wget -q -O /usr/bin/running "https://raw.githubusercontent.com/Andyyuda/v4/main/menu/running.sh"
-wget -q -O /usr/bin/speedtest "https://raw.githubusercontent.com/Andyyuda/v4/main/ssh/speedtest_cli.py"
-wget -q -O /usr/bin/menu-vless "https://raw.githubusercontent.com/Andyyuda/v4/main/menu/menu-vless.sh"
-wget -q -O /usr/bin/menu-vmess "https://raw.githubusercontent.com/Andyyuda/v4/main/menu/menu-vmess.sh"
-wget -q -O /usr/bin/menu-trojan "https://raw.githubusercontent.com/Andyyuda/v4/main/menu/menu-trojan.sh"
-wget -q -O /usr/bin/menu-ssh "https://raw.githubusercontent.com/Andyyuda/v4/main/menu/menu-ssh.sh"
-wget -q -O /usr/bin/menu-backup "https://raw.githubusercontent.com/Andyyuda/v4/main/menu/menu-backup.sh"
-wget -q -O /usr/bin/menu "https://raw.githubusercontent.com/Andyyuda/v4/main/menu/menu.sh"
-wget -q -O /usr/bin/menu-webmin "https://raw.githubusercontent.com/Andyyuda/v4/main/menu/menu-webmin.sh"
-wget -q -O /usr/bin/xp "https://raw.githubusercontent.com/Andyyuda/v4/main/ssh/xp.sh"
-wget -q -O /usr/bin/update "https://raw.githubusercontent.com/Andyyuda/v4/main/update.sh"
-wget -q -O /usr/bin/add-host "https://raw.githubusercontent.com/Andyyuda/v4/main/ssh/add-host.sh"
-wget -q -O /usr/bin/certv2ray "https://raw.githubusercontent.com/Andyyuda/v4/main/xray/certv2ray.sh"
-wget -q -O /usr/bin/menu-set "https://raw.githubusercontent.com/Andyyuda/v4/main/menu/menu-set.sh"
-wget -q -O /usr/bin/about "https://raw.githubusercontent.com/Andyyuda/v4/main/menu/about.sh"
-wget -q -O /usr/bin/add4 "https://raw.githubusercontent.com/Andyyuda/permission/main/add4.sh"
-wget -q -O /usr/bin/menu-backup "https://raw.githubusercontent.com/Andyyuda/v4/main/menu/menu-backup.sh"
-wget -q -O /usr/bin/trial "https://raw.githubusercontent.com/Andyyuda/v4/main/ssh/trial.sh"
-wget -q -O /usr/bin/usernew "https://raw.githubusercontent.com/Andyyuda/v4/main/ssh/usernew.sh"
-wget -q -O /usr/bin/add-tr "https://raw.githubusercontent.com/Andyyuda/v4/main/xray/add-tr.sh"
-wget -q -O /usr/bin/del-tr "https://raw.githubusercontent.com/Andyyuda/v4/main/xray/del-tr.sh"
-wget -q -O /usr/bin/cek-tr "https://raw.githubusercontent.com/Andyyuda/v4/main/xray/cek-tr.sh"
-wget -q -O /usr/bin/trialtrojan "https://raw.githubusercontent.com/Andyyuda/v4/main/xray/trialtrojan.sh"
-wget -q -O /usr/bin/renew-tr "https://raw.githubusercontent.com/Andyyuda/v4/main/xray/renew-tr.sh"
-wget -q -O /usr/bin/add-ws "https://raw.githubusercontent.com/Andyyuda/v4/main/xray/add-ws.sh"
-wget -q -O /usr/bin/del-ws "https://raw.githubusercontent.com/Andyyuda/v4/main/xray/del-ws.sh"
-wget -q -O /usr/bin/cek-ws "https://raw.githubusercontent.com/Andyyuda/v4/main/xray/cek-ws.sh"
-wget -q -O /usr/bin/renew-ws "https://raw.githubusercontent.com/Andyyuda/v4/main/xray/renew-ws.sh"
-wget -q -O /usr/bin/trialvmess "https://raw.githubusercontent.com/Andyyuda/v4/main/xray/trialvmess.sh"
-wget -q -O /usr/bin/add-vless "https://raw.githubusercontent.com/Andyyuda/v4/main/xray/add-vless.sh"
-wget -q -O /usr/bin/del-vless "https://raw.githubusercontent.com/Andyyuda/v4/main/xray/del-vless.sh"
-wget -q -O /usr/bin/cek-vless "https://raw.githubusercontent.com/Andyyuda/v4/main/xray/cek-vless.sh"
-wget -q -O /usr/bin/renew-vless "https://raw.githubusercontent.com/Andyyuda/v4/main/xray/renew-vless.sh"
-wget -q -O /usr/bin/trialvless "https://raw.githubusercontent.com/Andyyuda/v4/main/xray/trialvless.sh"
+wget -q -O /usr/bin/usernew "https://raw.githubusercontent.com/Bringas-tunnel/v5/main/ssh/usernew.sh"
+wget -q -O /usr/bin/auto-reboot "https://raw.githubusercontent.com/Bringas-tunnel/v5/main/menu/auto-reboot.sh"
+wget -q -O /usr/bin/restart "https://raw.githubusercontent.com/Bringas-tunnel/v5/main/menu/restart.sh"
+wget -q -O /usr/bin/tendang "https://raw.githubusercontent.com/Bringas-tunnel/v5/main/ssh/tendang.sh"
+wget -q -O /usr/bin/clearcache "https://raw.githubusercontent.com/Bringas-tunnel/v5/main/menu/clearcache.sh"
+wget -q -O /usr/bin/running "https://raw.githubusercontent.com/Bringas-tunnel/v5/main/menu/running.sh"
+wget -q -O /usr/bin/speedtest "https://raw.githubusercontent.com/Bringas-tunnel/v5/main/ssh/speedtest_cli.py"
+wget -q -O /usr/bin/menu-vless "https://raw.githubusercontent.com/Bringas-tunnel/v5/main/menu/menu-vless.sh"
+wget -q -O /usr/bin/menu-vmess "https://raw.githubusercontent.com/Bringas-tunnel/v5/main/menu/menu-vmess.sh"
+wget -q -O /usr/bin/menu-trojan "https://raw.githubusercontent.com/Bringas-tunnel/v5/main/menu/menu-trojan.sh"
+wget -q -O /usr/bin/menu-ssh "https://raw.githubusercontent.com/Bringas-tunnel/v5/main/menu/menu-ssh.sh"
+wget -q -O /usr/bin/menu-backup "https://raw.githubusercontent.com/Bringas-tunnel/v5/main/menu/menu-backup.sh"
+wget -q -O /usr/bin/menu "https://raw.githubusercontent.com/Bringas-tunnel/v5/main/menu/menu.sh"
+wget -q -O /usr/bin/menu-webmin "https://raw.githubusercontent.com/Bringas-tunnel/v5/main/menu/menu-webmin.sh"
+wget -q -O /usr/bin/xp "https://raw.githubusercontent.com/Bringas-tunnel/v5/main/ssh/xp.sh"
+wget -q -O /usr/bin/update "https://raw.githubusercontent.com/Bringas-tunnel/v5/main/update.sh"
+wget -q -O /usr/bin/add-host "https://raw.githubusercontent.com/Bringas-tunnel/v5/main/ssh/add-host.sh"
+wget -q -O /usr/bin/certv2ray "https://raw.githubusercontent.com/Bringas-tunnel/v5/main/xray/certv2ray.sh"
+wget -q -O /usr/bin/menu-set "https://raw.githubusercontent.com/Bringas-tunnel/v5/main/menu/menu-set.sh"
+wget -q -O /usr/bin/about "https://raw.githubusercontent.com/Bringas-tunnel/v5/main/menu/about.sh"
+#wget -q -O /usr/bin/add4 "https://raw.githubusercontent.com/Bringas-tunnel/permission/main/add4.sh"
+wget -q -O /usr/bin/menu-backup "https://raw.githubusercontent.com/Bringas-tunnel/v5/main/menu/menu-backup.sh"
+wget -q -O /usr/bin/trial "https://raw.githubusercontent.com/Bringas-tunnel/v5/main/ssh/trial.sh"
+wget -q -O /usr/bin/usernew "https://raw.githubusercontent.com/Bringas-tunnel/v5/main/ssh/usernew.sh"
+wget -q -O /usr/bin/add-tr "https://raw.githubusercontent.com/Bringas-tunnel/v5/main/xray/add-tr.sh"
+wget -q -O /usr/bin/del-tr "https://raw.githubusercontent.com/Bringas-tunnel/v5/main/xray/del-tr.sh"
+wget -q -O /usr/bin/cek-tr "https://raw.githubusercontent.com/Bringas-tunnel/v5/main/xray/cek-tr.sh"
+wget -q -O /usr/bin/trialtrojan "https://raw.githubusercontent.com/Bringas-tunnel/v5/main/xray/trialtrojan.sh"
+wget -q -O /usr/bin/renew-tr "https://raw.githubusercontent.com/Bringas-tunnel/v5/main/xray/renew-tr.sh"
+wget -q -O /usr/bin/add-ws "https://raw.githubusercontent.com/Bringas-tunnel/v5/main/xray/add-ws.sh"
+wget -q -O /usr/bin/del-ws "https://raw.githubusercontent.com/Bringas-tunnel/v5/main/xray/del-ws.sh"
+wget -q -O /usr/bin/cek-ws "https://raw.githubusercontent.com/Bringas-tunnel/v5/main/xray/cek-ws.sh"
+wget -q -O /usr/bin/renew-ws "https://raw.githubusercontent.com/Bringas-tunnel/v5/main/xray/renew-ws.sh"
+wget -q -O /usr/bin/trialvmess "https://raw.githubusercontent.com/Bringas-tunnel/v5/main/xray/trialvmess.sh"
+wget -q -O /usr/bin/add-vless "https://raw.githubusercontent.com/Bringas-tunnel/v5/main/xray/add-vless.sh"
+wget -q -O /usr/bin/del-vless "https://raw.githubusercontent.com/Bringas-tunnel/v5/main/xray/del-vless.sh"
+wget -q -O /usr/bin/cek-vless "https://raw.githubusercontent.com/Bringas-tunnel/v5/main/xray/cek-vless.sh"
+wget -q -O /usr/bin/renew-vless "https://raw.githubusercontent.com/Bringas-tunnel/v5/main/xray/renew-vless.sh"
+wget -q -O /usr/bin/trialvless "https://raw.githubusercontent.com/Bringas-tunnel/v5/main/xray/trialvless.sh"
 chmod +x /usr/bin/usernew
 chmod +x /usr/bin/auto-reboot
 chmod +x /usr/bin/restart
@@ -186,7 +186,7 @@ clear
 echo -e ""
 echo -e "\e[0;32mDownloaded successfully!\e[0m"
 echo ""
-ver=$( curl https://raw.githubusercontent.com/${GitUser}/v4/main/version )
+ver=$( curl https://raw.githubusercontent.com/${GitUser}/v5/main/version )
 sleep 1
 echo -e "\e[0;32mPatching New Update, Please Wait...\e[0m"
 echo ""
