@@ -163,7 +163,7 @@ echo -e "$green━━━━━━━━━━━━━━━━━━━━━�
 	echo "$dom" > /root/domain
         echo "$nsdomen" > /etc/xray/nsdomain
         echo "$nsdomen" > /root/nsdomain
-  fi
+
 domain=$(cat /root/domain)
 CITY=$(curl -s ipinfo.io/city )
 WKT=$(curl -s ipinfo.io/timezone )
