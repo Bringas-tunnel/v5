@@ -5,6 +5,7 @@ user=trial`</dev/urandom tr -dc X-Z0-9 | head -c4`
 uuid=$(cat /proc/sys/kernel/random/uuid)
 masaaktif=1
 exp=`date -d "$masaaktif days" +"%Y-%m-%d"`
+bug="masukan_bug"
 sed -i '/#vmess$/a\### '"$user $exp"'\
 },{"id": "'""$uuid""'","alterId": '"0"',"email": "'""$user""'"' /etc/xray/config.json
 exp=`date -d "$masaaktif days" +"%Y-%m-%d"`
@@ -21,7 +22,7 @@ acs=`cat<<EOF
       "net": "ws",
       "path": "/vmess",
       "type": "none",
-      "host": "",
+      "host": "${bug}",
       "tls": "tls"
 }
 EOF`
@@ -29,14 +30,14 @@ ask=`cat<<EOF
       {
       "v": "2",
       "ps": "${user}",
-      "add": "${domain}",
+      "add": "${bug}",
       "port": "80",
       "id": "${uuid}",
       "aid": "0",
       "net": "ws",
       "path": "/vmess",
       "type": "none",
-      "host": "",
+      "host": "${domain}",
       "tls": "none"
 }
 EOF`
@@ -51,7 +52,7 @@ grpc=`cat<<EOF
       "net": "grpc",
       "path": "vmess-grpc",
       "type": "none",
-      "host": "",
+      "host": "${bug}",
       "tls": "tls"
 }
 EOF`
