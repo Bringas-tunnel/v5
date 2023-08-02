@@ -176,6 +176,7 @@ chmod +x /usr/bin/del-vless
 chmod +x /usr/bin/cek-vless
 chmod +x /usr/bin/renew-vless
 chmod +x /usr/bin/trialvless
+chmod +x /usr/bin/menu-trial
 clear
 echo -e ""
 echo -e "\e[0;32mDownloaded successfully!\e[0m"
