@@ -38,13 +38,7 @@ fi
 clear
 echo ""
                                                            
-echo -e "$green▀████▀ ▀███▀▀████▀   ▀████▄     ▄███▀███▀▀▀██▄▀████▀ ▀███▀ $NC"
-echo -e "$green  ██   ▄█▀    ██       ████    ████   ██   ▀██▄ ██   ▄█▀   $NC"
-echo -e "$green  ██ ▄█▀      ██       █ ██   ▄█ ██   ██   ▄██  ██ ▄█▀     $NC"
-echo -e "$green  █████▄      ██       █  ██  █▀ ██   ███████   █████▄     $NC"
-echo -e "$green  ██  ███     ██     ▄ █  ██▄█▀  ██   ██        ██  ███    $NC"
-echo -e "$green  ██   ▀██▄   ██    ▄█ █  ▀██▀   ██   ██        ██   ▀██▄  $NC"
-echo -e "$green▄████▄   ███▄████████████▄ ▀▀  ▄████▄████▄    ▄████▄   ███▄$NC"
+figlet 'UPDATE'
                                                            
 echo -e "   \e[$line--------------------------------------------------------\e[m"
 echo -e "   \e[$back_text                 \e[30m[\e[$box CHECK NEW UPDATE\e[30m ]                   \e[m"
@@ -55,8 +49,8 @@ echo -e ""
 echo -e "       \e[1;31mWould you like to proceed?\e[0m"
 echo ""
 echo -e "            \e[0;32m[ Select Option ]\033[0m"
-echo -e "     \e[$number [1]\e[m \e[$below CCheck Script Update Now\e[m"
-echo -e "     \e[$number [x]\e[m \e[$below BBack To Menu\e[m"
+echo -e "     \e[$number [ 1 ]\e[m \e[$below CCheck Script Update Now\e[m"
+echo -e "     \e[$number [ x ]\e[m \e[$below BBack To Menu\e[m"
 echo -e ""
 echo -e "   \e[$line--------------------------------------------------------\e[m"
 echo -e "\e[$line"
