@@ -6,6 +6,7 @@ uuid=$(cat /proc/sys/kernel/random/uuid)
 masaaktif=1
 exp=`date -d "$masaaktif days" +"%Y-%m-%d"`
 uuid=$(cat /proc/sys/kernel/random/uuid)
+bug="masukan_bug"
 read -p "Expired (days): " masaaktif
 sed -i '/#vless$/a\#& '"$user $exp"'\
 },{"id": "'""$uuid""'","email": "'""$user""'"' /etc/xray/config.json
