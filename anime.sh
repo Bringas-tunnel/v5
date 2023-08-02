@@ -255,7 +255,7 @@ gg="AM"
 fi
 curl -sS ifconfig.me > /etc/myipvps
 echo " "
-echo "=====================-[ SCRIPT ANDY YUDA ]-===================="
+echo "=====================-[ SCRIPT BRINGAS FAMILY]-===================="
 echo ""
 echo "------------------------------------------------------------"
 echo ""
@@ -296,7 +296,7 @@ echo ""
 echo ""
 echo "------------------------------------------------------------"
 echo ""
-echo "===============-[ Script Created Andy Yuda ]-==============="
+echo "===============-[ Script by bringas tunnel ]-==============="
 echo -e ""
 echo ""
 echo "" | tee -a log-install.txt
