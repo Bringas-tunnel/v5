@@ -4,8 +4,6 @@ echo "Checking VPS"
 aureb=$(cat /home/re_otm)
 clear
 echo " "
-echo "===============-[ SCRIPT ANDY YUDA VPN ]-=============="
-echo ""
 echo "------------------------------------------------------------"
 echo ""
 echo ""
@@ -44,8 +42,6 @@ echo ""
 echo ""
 echo "------------------------------------------------------------"
 echo ""
-echo "==========-[ Script Created By ARTA MAULANA TUNNEL ]-==========="
-echo -e ""
 echo ""
 read -n 1 -s -r -p "Press any key to back on menu"
 menu
