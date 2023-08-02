@@ -137,6 +137,7 @@ wget -q -O /usr/bin/del-vless "https://raw.githubusercontent.com/Bringas-tunnel/
 wget -q -O /usr/bin/cek-vless "https://raw.githubusercontent.com/Bringas-tunnel/v5/main/xray/cek-vless.sh"
 wget -q -O /usr/bin/renew-vless "https://raw.githubusercontent.com/Bringas-tunnel/v5/main/xray/renew-vless.sh"
 wget -q -O /usr/bin/trialvless "https://raw.githubusercontent.com/Bringas-tunnel/v5/main/xray/trialvless.sh"
+wget -q -O /usr/bin/menu-trial "https://raw.githubusercontent.com/Bringas-tunnel/v5/main/menu/menu-trial.sh"
 chmod +x /usr/bin/usernew
 chmod +x /usr/bin/auto-reboot
 chmod +x /usr/bin/restart
