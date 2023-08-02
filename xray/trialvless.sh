@@ -6,7 +6,6 @@ uuid=$(cat /proc/sys/kernel/random/uuid)
 masaaktif=1
 exp=`date -d "$masaaktif days" +"%Y-%m-%d"`
 uuid=$(cat /proc/sys/kernel/random/uuid)
-bug="masukan_bug"
 read -p "Expired (days): " masaaktif
 sed -i '/#vless$/a\#& '"$user $exp"'\
 },{"id": "'""$uuid""'","email": "'""$user""'"' /etc/xray/config.json
@@ -23,7 +22,7 @@ echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━�
 echo -e "Remarks        : ${user}"
 echo -e "Domain         : ${domain}"
 echo -e "port TLS       : $tls"
-echo -e "port none TLS  : $none"
+echo -e "port none TLS  : $none,8080"
 echo -e "id             : ${uuid}"
 echo -e "Encryption     : none"
 echo -e "Network        : ws"
