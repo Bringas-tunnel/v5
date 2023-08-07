@@ -63,3 +63,5 @@ Tanggal       : $date
 ==================================
 "
 echo "Silahkan cek Kotak Masuk $email"
+read -p "[ENTER] BACK TO MENU"
+menu
