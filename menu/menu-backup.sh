@@ -14,32 +14,16 @@ Red_background="\033[41;37m"
 Suffix="\033[0m"
 
 echo ""
-echo -e "$green███╗   ███╗███████╗███╗   ██╗██╗   ██╗    ██████╗  █████╗  ██████╗██╗  ██╗██╗   ██╗██████╗ $NC"
-echo -e "$green████╗ ████║██╔════╝████╗  ██║██║   ██║    ██╔══██╗██╔══██╗██╔════╝██║ ██╔╝██║   ██║██╔══██╗$NC"
-echo -e "$green██╔████╔██║█████╗  ██╔██╗ ██║██║   ██║    ██████╔╝███████║██║     █████╔╝ ██║   ██║██████╔╝$NC"
-echo -e "$green██║╚██╔╝██║██╔══╝  ██║╚██╗██║██║   ██║    ██╔══██╗██╔══██║██║     ██╔═██╗ ██║   ██║██╔═══╝ $NC"
-echo -e "$green██║ ╚═╝ ██║███████╗██║ ╚████║╚██████╔╝    ██████╔╝██║  ██║╚██████╗██║  ██╗╚██████╔╝██║     $NC"
-echo -e "$green╚═╝     ╚═╝╚══════╝╚═╝  ╚═══╝ ╚═════╝     ╚═════╝ ╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝ ╚═════╝ ╚═╝     $NC"
-echo -e "${ungu}++++++++++++++++++++++++++++++++++++++++++++"
-echo -e
-echo -e "${BlueCyan}              Menu Backup                   "
-echo -e
-echo -e "            t.me/Bringas-tunnel"
-echo -e "${ungu}++++++++++++++++++++++++++++++++++++++++++++"
-echo
-echo
-echo -e "${BlueCyan}Pilih Nomor: "
+
+echo -e "=========- BACKUP DATA -========="
+echo -e ""
 echo
 echo "1).Backup"
 echo "2).Restore"
-echo "3).strt"
-echo "4).limit speed"
-echo "5).autobackup"
-echo
-echo -e "${ungu}++++++++++++++++++++++++++++++++++++++++++++"
+echo -e ""
 echo
 echo -e "${BlueCyan}"
-read -p    "Pilih Nomor └╼>>>" bro
+read -p    "Pilih Nomor └╼>>>   " bro
 
 if [ $bro = 1 ] || [ $bro = 1 ]
 then
@@ -54,40 +38,38 @@ fi
 
 if [ $bro = 2 ] || [ $bro = 2 ]
 then
-figlet "Restore" | lolcat
 restore
 echo "--------------------------------------------------------"
-echo
-echo "Terimakasih sudah menggunakan layanan script Bringas-tunnel"
-echo
-echo "--------------------------------------------------------"
-fi
-if [ $bro = 3 ] || [ $bro = 3 ]
-then
-figlet "strt"
-strt
-echo "--------------------------------------------------------"
-echo
-echo "Terimakasih sudah menggunakan layanan script Bringas-tunnel"
+echo "                     SUKSES          "
 echo
 echo "--------------------------------------------------------"
 fi
-if [ $bro = 4 ] || [ $bro = 4 ]
-then
-limitspeed
-echo "--------------------------------------------------------"
-echo
-echo "Terimakasih sudah menggunakan layanan script Bringas-tunnel"
-echo
-echo "--------------------------------------------------------"
-fi
+#if [ $bro = 3 ] || [ $bro = 3 ]
+#then
+#figlet "strt"
+#strt
+#echo "--------------------------------------------------------"
+#echo
+#echo "Terimakasih sudah menggunakan layanan script Bringas-tunnel"
+#echo
+#echo "--------------------------------------------------------"
+#fi
+#if [ $bro = 4 ] || [ $bro = 4 ]
+#then
+#limitspeed
+#echo "--------------------------------------------------------"
+#echo
+#echo "Terimakasih sudah menggunakan layanan script Bringas-tunnel"
+#echo
+#echo "--------------------------------------------------------"
+#fi
 
-if [ $bro = 5 ] || [ $bro = 5 ]
-then
-autobackup
-echo "--------------------------------------------------------"
-echo
-echo "Terimakasih sudah menggunakan layanan script Bringas-tunnel"
-echo
-echo "--------------------------------------------------------"
-fi
+#if [ $bro = 5 ] || [ $bro = 5 ]
+#then
+#autobackup
+#echo "--------------------------------------------------------"
+#echo
+#echo "Terimakasih sudah menggunakan layanan script Bringas-tunnel"
+#echo
+#echo "--------------------------------------------------------"
+#fi
